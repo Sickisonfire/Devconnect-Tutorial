@@ -1,3 +1,3 @@
 {
-  "mongoURI": "mongodb+srv://User123:<password>@devconnector-ef7cl.mongodb.net/test?retryWrites=true"
+  "mongoURI": "mongodb+srv://User123:User123@devconnector-ef7cl.mongodb.net/test?retryWrites=true"
 }
