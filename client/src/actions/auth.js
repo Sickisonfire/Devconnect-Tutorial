@@ -87,7 +87,7 @@ export const login = (email, password) => async dispatch => {
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
-    console.log(err.response.data);
+    //console.log(err.response.data);
     if (errors) {
       errors.forEach(error => dispatch(setAlert(error.msg, 'danger')));
     }
@@ -100,5 +100,6 @@ export const login = (email, password) => async dispatch => {
 
 //Logout / clear profile
 export const logout = () => dispatch => {
+  localStorage.removeItem('token');
   dispatch({ type: LOGOUT });
 };
